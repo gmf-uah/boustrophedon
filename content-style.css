@@ -1,0 +1,72 @@
+.boustro-source {
+  position: relative;
+  color: transparent !important;
+  -webkit-text-fill-color: transparent !important;
+}
+
+.boustro-source * {
+  color: transparent !important;
+  -webkit-text-fill-color: transparent !important;
+}
+
+.boustro-source::selection,
+.boustro-source *::selection {
+  background: rgba(50, 130, 230, 0.25);
+}
+
+.boustro-justify-only {
+  direction: ltr !important;
+  text-align: justify !important;
+  text-align-last: auto !important;
+}
+
+.boustro-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  user-select: none;
+  color: var(--boustro-color, #111) !important;
+  -webkit-text-fill-color: var(--boustro-color, #111) !important;
+  font: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  word-spacing: inherit;
+  white-space: normal;
+}
+
+.boustro-overlay,
+.boustro-overlay * {
+  color: var(--boustro-color, #111) !important;
+  -webkit-text-fill-color: var(--boustro-color, #111) !important;
+}
+
+.boustro-line {
+  display: block;
+  width: 100%;
+  unicode-bidi: isolate;
+  text-wrap: pretty;
+}
+
+.boustro-line--ltr {
+  direction: ltr;
+  text-align: justify;
+  text-align-last: justify;
+}
+
+.boustro-line--rtl {
+  direction: rtl;
+  text-align: justify;
+  text-align-last: justify;
+}
+
+.boustro-line--final-ltr {
+  direction: ltr;
+  text-align: left;
+  text-align-last: left;
+}
+
+.boustro-line--final-rtl {
+  direction: rtl;
+  text-align: right;
+  text-align-last: right;
+}

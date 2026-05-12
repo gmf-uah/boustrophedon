@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "Boustrophedon Reading Mode",
+  "version": "0.1.0",
+  "description": "Alternating line-direction reading mode for LTR text.",
+  "permissions": ["storage"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "commands": {
+    "toggle-boustro-enabled": {
+      "suggested_key": {
+        "default": "Ctrl+B",
+        "mac": "Command+B"
+      },
+      "description": "Toggle Boustrophedon mode globally"
+    }
+  },
+  "action": {
+    "default_title": "Boustrophedon Mode",
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "128": "128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content-script.js", "specified-sites.js"],
+      "css": ["content-style.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}

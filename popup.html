@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Boustrophedon Mode</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main class="panel">
+      <header class="header">
+        <h1>Boustrophedon Mode</h1>
+        <label class="switch switch--master" for="enabled" aria-label="Enable Boustrophedon mode">
+          <input id="enabled" type="checkbox" />
+          <span class="switch__track" aria-hidden="true"></span>
+        </label>
+      </header>
+
+      <label class="option" for="reverseWords">
+        <span>Reverse word order on each line</span>
+        <span class="switch">
+          <input id="reverseWords" type="checkbox" />
+          <span class="switch__track" aria-hidden="true"></span>
+        </span>
+      </label>
+
+      <label class="option" for="reverseLetters">
+        <span>Reverse letter order in each word</span>
+        <span class="switch">
+          <input id="reverseLetters" type="checkbox" />
+          <span class="switch__track" aria-hidden="true"></span>
+        </span>
+      </label>
+
+      <label class="option option--disabled">
+        <span>Character mirroring [WIP]</span>
+        <span class="switch">
+          <input id="mirrorCharacters" type="checkbox" disabled />
+          <span class="switch__track" aria-hidden="true"></span>
+        </span>
+      </label>
+    </main>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
