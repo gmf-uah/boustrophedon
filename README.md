@@ -2,7 +2,7 @@
 
 The goal is to make reading pages easier line-by-line, as your eyes don't need to dart from the right end of the page at the previous line back to the left at the start of the next line.
 
-It is named after the ancient Greek term for this writing method, ['boustrophedon'](https://en.wikipedia.org/wiki/Boustrophedon) (literally translating to 'as the ox plows').
+It is named after the ancient Greek term for this writing method ['boustrophedon'](https://en.wikipedia.org/wiki/Boustrophedon), which literally translating to "as the ox plows."
 
 ![Boustrophedon Icon](./128%20v3.png)
 
