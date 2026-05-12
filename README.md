@@ -2,9 +2,9 @@
 
 The goal is to make reading pages easier line-by-line, as your eyes don't need to dart from the right end of the page at the previous line back to the left at the start of the next line.
 
-It is named after the ancient Greek term for this writing method ['boustrophedon'](https://en.wikipedia.org/wiki/Boustrophedon), which literally translating to "as the ox plows."
+It is named after the ancient Greek term for this writing method ['boustrophedon,'](https://en.wikipedia.org/wiki/Boustrophedon) which literally translating to "as the ox plows."
 
-![Boustrophedon Icon](./128%20v3.png)
+![Boustrophedon Icon](./assets/images/128%20v3.png)
 
 Renders LTR page text in the boustrophedon style.
 
@@ -27,7 +27,7 @@ Having Boustrophedon mode enabled automatically applies [justification](https://
 
 | Unjustified | Justified |
 | :---------: | :---------: |
-| ![Unjustified](./unjustified.png) | ![Justified](./justified.png) |
+| ![Unjustified](./assets/images/unjustified.png) | ![Justified](./assets/images/justified.png) |
 
 Note that this extension only affects the appearance of the text, as copying & pasting places the original text onto your clipboard.
 

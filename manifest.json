@@ -1,11 +1,11 @@
 {
   "manifest_version": 3,
-  "name": "Boustrophedon Reading Mode",
+  "name": "Boustrophedon",
   "version": "0.1.0",
-  "description": "Alternating line-direction reading mode for LTR text.",
+  "description": "Alternate reading direction across lines.",
   "permissions": ["storage"],
   "background": {
-    "service_worker": "background.js"
+    "service_worker": "src/background/background.js"
   },
   "commands": {
     "toggle-boustro-enabled": {
@@ -18,16 +18,16 @@
   },
   "action": {
     "default_title": "Boustrophedon Mode",
-    "default_popup": "popup.html"
+    "default_popup": "src/popup/popup.html"
   },
   "icons": {
-    "128": "128.png"
+    "128": "assets/images/128.png"
   },
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
-      "js": ["content-script.js", "specified-sites.js"],
-      "css": ["content-style.css"],
+      "js": ["src/content/content-script.js", "src/content/specified-sites.js"],
+      "css": ["src/content/content-style.css"],
       "run_at": "document_idle"
     }
   ]
