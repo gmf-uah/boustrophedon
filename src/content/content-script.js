@@ -1,4 +1,12 @@
 (() => {
+    const isMhtmlFile = window.location.protocol === "file:" && /\.mht(?:ml)?$/i.test(window.location.pathname);
+
+    if (isMhtmlFile) {
+        // Browser sandboxes MHTML documents and blocks script execution.
+        console.info("Boustrophedon: Skipping MHTML file because sandboxed documents do not allow scripts.");
+        return;
+    }
+
     const DEFAULT_SETTINGS = {
         enabled: true,
         mirrorCharacters: false,
