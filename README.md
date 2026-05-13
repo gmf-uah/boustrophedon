@@ -38,3 +38,4 @@ Use the following keyboard shortcuts to toggle the global on/off state of the ex
 ## TODO
 
 - Fix instances where >1 trailing punctuation characters doesn't work; e.g. 'he said "I took a ride," and left.'
+- Cross-compatibility with Firefox
