@@ -35,14 +35,6 @@ Use the following keyboard shortcuts to toggle the global on/off state of the ex
 - `Ctrl+B` (Windows/Linux)
 - `Command+B` (macOS)
 
-## Testing local sample pages
+## TODO
 
-If you test with files from `assets/samples`, use `sample-page.html` (or any normal `.html` file).
-
-Chrome blocks script execution in `.mhtml`/`.mht` documents because they are loaded in a sandboxed frame without `allow-scripts`. That restriction also prevents extension content scripts from running there.
-
-To test local files in Chrome extensions:
-- Open `chrome://extensions`
-- Enable **Developer mode**
-- Open this extension's **Details**
-- Turn on **Allow access to file URLs**
+- Fix instances where >1 trailing punctuation characters doesn't work; e.g. 'he said "I took a ride," and left.'
